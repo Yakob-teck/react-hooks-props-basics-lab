@@ -1,5 +1,5 @@
 import React from "react";
-import Links from "./Links";
+import Links from "./links";
 
 function About(props) {
   const { bio, links } = props;
@@ -10,9 +10,8 @@ function About(props) {
       {bio && bio.trim() !== "" && <p>{bio}</p>}
       <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
       <h3>Links</h3>
-      <Links github={links.github} linkedin={links.linkedin} />
+      <links github={links.github} linkedin={links.linkedin} />
     </div>
   );
 }
-
 export default About;
