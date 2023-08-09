@@ -1,5 +1,5 @@
 import React from "react";
-import Links from "./links";
+import Links from "./Links";
 
 function About(props) {
   const { bio, links } = props;
@@ -10,7 +10,7 @@ function About(props) {
       {bio && bio.trim() !== "" && <p>{bio}</p>}
       <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
       <h3>Links</h3>
-      <links github={links.github} linkedin={links.linkedin} />
+      <Links github={links.github} linkedin={links.linkedin} />
     </div>
   );
 }
